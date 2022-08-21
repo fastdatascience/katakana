@@ -53,7 +53,7 @@ html.Div(
                height=500,
             #  filename="assets/character_background_faint.drawio.png",
                # from  https://upload.wikimedia.org/wikipedia/commons/9/91/Japanese_Katakana_A.svg
-            filename="assets/output.svg",
+            filename="assets/a_static.png",
 # filename="assets/a.gif",
                # json_data="""{"objects":[{"type":"image","originX":"left","originY":"top","left":0,"top":0,"width":236,"height":236,"fill":"rgb(0,0,0)","stroke":null,"strokeWidth":0,"strokeDashArray":null,"strokeLineCap":"butt","strokeLineJoin":"miter","strokeMiterLimit":10,"scaleX":2.12,"scaleY":2.12,"angle":0,"flipX":false,"flipY":false,"opacity":1,"shadow":null,"visible":true,"clipTo":null,"backgroundColor":"","fillRule":"nonzero","globalCompositeOperation":"source-over","transformMatrix":null,"skewX":0,"skewY":0,"crossOrigin":"","alignX":"none","alignY":"none","meetOrSlice":"meet","src":"http://localhost:8050/assets/character_background_faint.drawio.png","filters":[],"resizeFilters":[]},{"type":"line","originX":"center","originY":"center","left":262,"top":147.65,"width":228,"height":4,"fill":"red","stroke":"red","strokeWidth":10,"strokeDashArray":null,"strokeLineCap":"butt","strokeLineJoin":"miter","strokeMiterLimit":10,"scaleX":1,"scaleY":1,"angle":0,"flipX":false,"flipY":false,"opacity":1,"shadow":null,"visible":true,"clipTo":null,"backgroundColor":"","fillRule":"nonzero","globalCompositeOperation":"source-over","transformMatrix":null,"skewX":0,"skewY":0,"x1":-114,"x2":114,"y1":2,"y2":-2}]}"""
                ),
@@ -75,7 +75,7 @@ html.Div(
 def update_state(state):
     print ("state", state)
     if state == 0:
-        return [{"display": "inline"}, {"display": "none"}, None, "assets/output.svg",]
+        return [{"display": "inline"}, {"display": "none"}, None, "assets/a_static.png",]
     else:
         return [{"display":"none"}, {"display":"inline"}, "assets/a.gif", None]
 
